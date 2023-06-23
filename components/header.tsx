@@ -11,7 +11,7 @@ export default function Header() {
       <Logo>
         <img src="/images/logo.svg" alt="Disney+" />
       </Logo>
-      {!isLoggedIn ? (<Login onClick={() => { setLogin(!isLoggedIn); }}>Login</Login>
+      {!isLoggedIn ? (<Login onClick={() => { setLogin(!isLoggedIn); router.push('/home') }}>Login</Login>
       ) : (
         <>
           <NavMenu>
